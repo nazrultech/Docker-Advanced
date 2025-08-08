@@ -1,0 +1,5 @@
+FROM nginx:latest
+
+CMD echo "This is a custom Dockerfile for an Nginx server"
+
+#PS D:\IITM\Docker-Advanced\custom> docker build --file="mydockerfile" . -t custom:2   
