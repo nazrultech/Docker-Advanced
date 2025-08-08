@@ -1,0 +1,14 @@
+docker container ls
+→ Lists all running Docker containers.
+
+docker container stop <container_id>
+→ Stops a specific container using its ID or name.
+
+docker container ps
+→ Same as docker container ls; lists running containers.
+
+docker container stop $(docker container ls -aq)
+→ Stops all running containers by passing their IDs.
+
+docker container prune
+→ Deletes all stopped containers to free up space.
